@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Route;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        
+        // Proteger rutas con expresiones regulares
+        //solo con letras mayusculas y minusculas y numeros
+        Route::pattern('producto', '[a-zA-Z0-9]+');
     }
 }

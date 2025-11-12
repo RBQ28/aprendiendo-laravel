@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Vista de inicio -->
+    <!-- Mensaje de bienvenida -->
     <h1>Hola desde la vista inicio.blade.php</h1>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src=""></script>
+
+
 </html>
